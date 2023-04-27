@@ -19,7 +19,6 @@ public class loginPage extends Stage {
     public loginPage() throws IOException {
         Parent p = FXMLLoader.load(getClass().getResource("../View/Login.fxml"));
         login = new Scene(p);
-
     }
 
 }

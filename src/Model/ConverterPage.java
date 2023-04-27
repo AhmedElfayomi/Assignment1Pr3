@@ -19,11 +19,8 @@ public class ConverterPage extends Stage {
     private Scene ConverterPage;
 
     public ConverterPage() throws IOException {
-//        Parent p = FXMLLoader.load(getClass().getResource("../View/Converter.fxml"));
-        FXMLLoader C = new FXMLLoader(getClass().getResource("../View/Converter.fxml"));
-        Parent l = C.load();  
-                ConverterPage = new Scene(l);
-
+        Parent p = FXMLLoader.load(getClass().getResource("../View/Converter.fxml"));
+        ConverterPage = new Scene(p);
 
     }
 
