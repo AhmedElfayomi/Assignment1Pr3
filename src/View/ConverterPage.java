@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Model;
+package View;
 
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
@@ -19,9 +19,10 @@ public class ConverterPage extends Stage {
     private Scene ConverterPage;
 
     public ConverterPage() throws IOException {
-        Parent p = FXMLLoader.load(getClass().getResource("../View/Converter.fxml"));
+        Parent p = FXMLLoader.load(getClass().getResource("Converter.fxml"));
         ConverterPage = new Scene(p);
-
+        this.setScene(ConverterPage);
+        this.setTitle("Login Page");
     }
 
 }

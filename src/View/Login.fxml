@@ -10,35 +10,38 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="276.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Contoller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="318.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
-      <VBox alignment="CENTER" layoutX="53.0" layoutY="149.0" prefHeight="207.0" prefWidth="170.0" spacing="7.0">
+      <VBox alignment="CENTER" layoutX="74.0" layoutY="164.0" prefHeight="207.0" prefWidth="170.0" spacing="7.0" AnchorPane.rightAnchor="73.6">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="101.0" text="username">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="15.0" />
                </font>
             </Label>
             <TextField fx:id="textUsername" prefHeight="33.0" prefWidth="170.0" style="-fx-border-color: #bb87ff;" />
             <Label alignment="CENTER" prefHeight="18.0" prefWidth="101.0" text="password">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="15.0" />
                </font>
             </Label>
             <TextField fx:id="textPassword" prefHeight="33.0" prefWidth="170.0" style="-fx-border-color: #bb87ff;" />
             <Button fx:id="login" mnemonicParsing="false" onAction="#BtnLogin" prefHeight="32.0" prefWidth="77.0" style="-fx-background-color: #005cf0;" text="Login" textFill="WHITE">
                <VBox.margin>
-                  <Insets />
+                  <Insets top="14.0" />
                </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </Button>
          </children>
          <padding>
             <Insets top="5.0" />
          </padding>
       </VBox>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@user.png" />
+            <Image url="@../img/user.png" />
          </image>
       </ImageView>
    </children>

@@ -1,8 +1,6 @@
 
 package View;
 
-import Model.ConverterPage;
-import Model.loginPage;
 import java.io.IOException;
 
 /**
@@ -10,7 +8,7 @@ import java.io.IOException;
  * @author Ahmed
  */
 public class ViewManager {
-    public static loginPage loginPage;
+    public static LoginPage loginPage;
     public static ConverterPage ConverterPage;
     
     
@@ -19,7 +17,7 @@ public class ViewManager {
     
     public static void openloginPage() throws IOException{
         if (loginPage == null) {
-            loginPage = new loginPage();
+            loginPage = new LoginPage();
             loginPage.show();
         } else {
             loginPage.show();

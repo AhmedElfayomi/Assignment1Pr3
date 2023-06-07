@@ -1,7 +1,7 @@
 
-package Contoller;
+package Controller;
 
-import Model.ConverterPage;
+import View.ConverterPage;
 import Model.CurrencyConverter;
 import View.ViewManager;
 import java.io.IOException;
@@ -52,7 +52,6 @@ public class ConverterController implements Initializable {
 
     @FXML
     private void BtnConvert(ActionEvent event) {
-        
         if (!TfUSD.getText().isEmpty() && TfNIS.getText().isEmpty()) {
                 double USD = Double.parseDouble(TfUSD.getText());
                 double ILS = CurrencyConverter.convertToILS(USD);
